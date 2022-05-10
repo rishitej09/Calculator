@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/style.css" type="text/css">
+    <link rel="shortcut icon" href="./Components/calculator icon.jpg" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>CALCULATOR</header>
+    <table>
+        <th colspan="4"><input type="text" title="input" id="result"></th>
+        <tr>
+            <td><input type="button" value="7" title="Button" onclick="send('7')"></td>
+            <td><input type="button" value="8" title="Button" onclick="send('8')"></td>
+            <td><input type="button" value="9" title="Button" onclick="send('9')"></td>
+            <td><input type="button" value="+" title="Button" onclick="send('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" title="Button" onclick="send('4')"></td>
+            <td><input type="button" value="5" title="Button" onclick="send('5')"></td>
+            <td><input type="button" value="6" title="Button" onclick="send('6')"></td>
+            <td><input type="button" value="-" title="Button" onclick="send('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" title="Button" onclick="send('1')"></td>
+            <td><input type="button" value="2" title="Button" onclick="send('2')"></td>
+            <td><input type="button" value="3" title="Button" onclick="send('3')"></td>
+            <td><input type="button" value="*" title="Button" onclick="send('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="AC" title="Button" id="ac" onclick="clr()"></td>
+            <td><input type="button" value="0" title="Button" onclick="send('0')"></td>
+            <td><input type="button" value="=" title="Button" onclick="evaluate1()" onkeypress="evaluate1()"></td>
+            <td><input type="button" value="/" title="Button" onclick="send('/')"></td>
+        </tr>
+    </table>
+    <script src="./source/script.js"></script>
+</body>
+</html>

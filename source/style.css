@@ -4,13 +4,15 @@ body{
 header{
     text-align: center;
     font-size: 100px;
+    /* transition: 1s ease; */
     font-weight: bolder;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 table{
     background-color:transparent;
-    backdrop-filter:blur(10px);
+    /* display: block; */
+    /* backdrop-filter: blur(10px); */
     border: 1px solid white;
     position: absolute;
     top: 20rem;
@@ -20,12 +22,33 @@ table{
     border-radius: 30px;
     transition: 1s ease;
 }
+@media screen and (max-width: 480px){
+    body{
+        background-image: url(https://images.hdqwalls.com/download/lines-thread-abstract-4k-wm-1920x1200.jpg);
+        width:100%;
+        height:100%;
+        
+    }
+    header{
+        position: absolute;
+        text-align: center;
+        font-size: 80px;
+        font-weight: bold;
+        font-family: lucida console;
+        margin-left: auto;
+    }
+    table{
+       position: absolute;
+       left: 10%;
+    }
+}
 table:hover {
     background: transparent;
     transition: 1s ease;
     transform: scale(1.2);
-    backdrop-filter:blur(2px);
+    backdrop-filter: blur(10px);
 }
+
 
 
 th > input{
@@ -37,6 +60,15 @@ th > input{
     font-size: 30px;
 
 
+}
+td > input {
+    border-radius: 10px;
+    width:70px;
+    height: 40px;
+    margin-left: 15px;
+    font-size: 30px;
+    
+}
 }
 td > input {
     border-radius: 10px;
